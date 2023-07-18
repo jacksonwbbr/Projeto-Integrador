@@ -1,3 +1,4 @@
+#oi gabriel e lara
 import cv2
 import pytesseract
 from gtts import gTTS
