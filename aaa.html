@@ -1,0 +1,14 @@
+<!-- v4 -->
+<script src='https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js'></script>
+
+<script>
+Tesseract.recognize(
+// 'https://tesseract.projectnaptha.com/img/eng_bw.png',
+
+'atentao.jpg',
+  'por',
+  { logger: m => console.log(m) }
+).then(({ data: { text } }) => {
+  console.log(text);
+})
+</script>
